@@ -18,7 +18,7 @@
 .hero-mau-photo, .hero-mau-mascot, .hero-mau-wave { position: absolute; max-width: none; height: auto; }
 .hero-mau-photo { left: calc(847 * var(--hu)); top: 0; width: calc(927 * var(--hu)); z-index: 0; }
 .hero-mau-wave { width: 100%; height: 100%; inset: 0; z-index: 1; pointer-events: none; }
-.hero-mau-mascot { left: calc(1448 * var(--hu)); top: calc(274 * var(--hu)); width: calc(298 * var(--hu)); z-index: 2; filter: drop-shadow(0 calc(6 * var(--hu)) calc(6 * var(--hu)) #81000746); }
+.hero-mau-mascot { left: calc(1448 * var(--hu)); top: calc(274 * var(--hu)); width: calc(298 * var(--hu)); z-index: 2; }
 .hero-mau-copy {
   position: relative;
   z-index: 3;
@@ -41,7 +41,6 @@
   height: 100%;
   fill: #fff;
   font: 800 28.5px var(--body-font);
-  text-shadow: 0 1.5px #c80517;
 }
 .hero-mau h1 {
   position: relative;
