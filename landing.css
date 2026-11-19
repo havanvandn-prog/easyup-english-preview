@@ -407,7 +407,7 @@ main > section.benefits-pa4 { padding-bottom: 0; }
 .course-copy li strong { color: var(--deep); }
 .course-side { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; width: fit-content; max-width: 100%; margin-top: 22px; text-align: left; }
 @media (min-width: 1024px) {
-  .course-panel { grid-template-columns: minmax(0,2fr) minmax(0,3fr); }
+  .course-panel { grid-template-columns: minmax(0,2fr) minmax(0,3fr); padding-bottom: 25px; }
   .course-art { position: relative; max-width: 26rem; aspect-ratio: 736 / 636; overflow: clip; }
   .course-portrait { position: absolute; inset: auto 0 0; height: auto; }
   main > .courses .course-panel h3 { font-size: 28px; }
