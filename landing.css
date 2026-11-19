@@ -964,3 +964,23 @@ main > .care .care-checkpoints h3 {
   .tuition-grid { width: min(100%, 580px); margin-inline: auto; padding-top: 0; grid-template-columns: minmax(0, 1fr); row-gap: 22px; }
   .tuition-featured { margin-top: 8px; }
 }
+
+/* Thử nghiệm bảng màu nền EasyUp English */
+:root {
+  --section-bg-white: #fff;
+  --section-bg-blush: #fff2f4;
+  --section-bg-neutral: #f7f8fa;
+  --section-bg-brand: #c90020;
+  --section-bg-signup: #ffe5e9;
+}
+
+main > :is(.hero, .benefits, .teachers, .faculty, .care) {
+  background: var(--section-bg-white);
+}
+main > :is(.concerns, .experience, .tuition) {
+  background: var(--section-bg-blush);
+}
+main > .courses { background: var(--section-bg-neutral); }
+main > .signup { background: var(--section-bg-signup); }
+.site-footer { background: var(--section-bg-brand); }
+.signup-wave stop:last-child { stop-color: var(--section-bg-brand); }
