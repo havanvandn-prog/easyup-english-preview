@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 30 580 580" width="580" height="580" role="img" aria-label="C.A.R.E — Bốn trụ cột chăm sóc học viên">
+    <defs><filter id="soft" x="-20%" y="-20%" width="140%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#780012" flood-opacity="0.1"/></filter><path id="arc0" d="M45.3 307 A275 275 0 0 1 307 45.3 Q313 45 316 50 L350 105 Q353 110 349.5 115 L315.5 168 Q313 172 308 172.5 A148 148 0 0 0 172.5 307 Q172 312 167.5 309 L114 275 Q109 272 104 275 L51 309 Q45 313 45.3 307 Z" transform="rotate(0 320 320)"/>
+        <clipPath id="clip0"><use href="#arc0"/></clipPath>
+        <linearGradient id="paint0" gradientTransform="rotate(128 .5 .5)">
+          <stop stop-color="#ff3048"/><stop offset=".24" stop-color="#ed0028"/>
+          <stop offset=".7" stop-color="#ed0028"/><stop offset="1" stop-color="#ac001b"/>
+        </linearGradient>
+        <radialGradient id="spot0" cx="32%" cy="8%" r="75%">
+          <stop stop-color="#ffe5e8" stop-opacity="0.04"/><stop offset="1" stop-color="#ffeaec" stop-opacity="0"/>
+        </radialGradient><path id="arc1" d="M45.3 307 A275 275 0 0 1 307 45.3 Q313 45 316 50 L350 105 Q353 110 349.5 115 L315.5 168 Q313 172 308 172.5 A148 148 0 0 0 172.5 307 Q172 312 167.5 309 L114 275 Q109 272 104 275 L51 309 Q45 313 45.3 307 Z" transform="rotate(90 320 320)"/>
+        <clipPath id="clip1"><use href="#arc1"/></clipPath>
+        <linearGradient id="paint1" gradientTransform="rotate(139 .5 .5)">
+          <stop stop-color="#ff3048"/><stop offset=".24" stop-color="#e10022"/>
+          <stop offset=".7" stop-color="#e10022"/><stop offset="1" stop-color="#ac001b"/>
+        </linearGradient>
+        <radialGradient id="spot1" cx="32%" cy="8%" r="75%">
+          <stop stop-color="#ffe5e8" stop-opacity="0.04"/><stop offset="1" stop-color="#ffeaec" stop-opacity="0"/>
+        </radialGradient><path id="arc2" d="M45.3 307 A275 275 0 0 1 307 45.3 Q313 45 316 50 L350 105 Q353 110 349.5 115 L315.5 168 Q313 172 308 172.5 A148 148 0 0 0 172.5 307 Q172 312 167.5 309 L114 275 Q109 272 104 275 L51 309 Q45 313 45.3 307 Z" transform="rotate(180 320 320)"/>
+        <clipPath id="clip2"><use href="#arc2"/></clipPath>
+        <linearGradient id="paint2" gradientTransform="rotate(150 .5 .5)">
+          <stop stop-color="#ff3048"/><stop offset=".24" stop-color="#c5001d"/>
+          <stop offset=".7" stop-color="#c5001d"/><stop offset="1" stop-color="#ac001b"/>
+        </linearGradient>
+        <radialGradient id="spot2" cx="32%" cy="8%" r="75%">
+          <stop stop-color="#ffe5e8" stop-opacity="0.04"/><stop offset="1" stop-color="#ffeaec" stop-opacity="0"/>
+        </radialGradient><path id="arc3" d="M45.3 307 A275 275 0 0 1 307 45.3 Q313 45 316 50 L350 105 Q353 110 349.5 115 L315.5 168 Q313 172 308 172.5 A148 148 0 0 0 172.5 307 Q172 312 167.5 309 L114 275 Q109 272 104 275 L51 309 Q45 313 45.3 307 Z" transform="rotate(270 320 320)"/>
+        <clipPath id="clip3"><use href="#arc3"/></clipPath>
+        <linearGradient id="paint3" gradientTransform="rotate(161 .5 .5)">
+          <stop stop-color="#ff3048"/><stop offset=".24" stop-color="#c9001f"/>
+          <stop offset=".7" stop-color="#c9001f"/><stop offset="1" stop-color="#ac001b"/>
+        </linearGradient>
+        <radialGradient id="spot3" cx="32%" cy="8%" r="75%">
+          <stop stop-color="#ffe5e8" stop-opacity="0.04"/><stop offset="1" stop-color="#ffeaec" stop-opacity="0"/>
+        </radialGradient><radialGradient id="hub" cx="73%" cy="16%" r="86%">
+      <stop stop-color="#df0021"/><stop offset=".52" stop-color="#df0021"/><stop offset="1" stop-color="#b30018"/>
+    </radialGradient>
+    <linearGradient id="edge" x2="68%" y2="100%">
+      <stop stop-color="#ff8b97"/><stop offset="1" stop-color="#ff8b97"/>
+    </linearGradient>
+    <clipPath id="hubClip"><circle cx="320" cy="320" r="138"/></clipPath></defs>
+    <g filter="url(#soft)"><use href="#arc0" fill="#ac001b" opacity=".6" transform="translate(0 1)"/><use href="#arc0" fill="url(#paint0)" stroke="#ff8b97" stroke-width="1.2"/><g clip-path="url(#clip0)">
+          <use href="#arc0" fill="url(#spot0)"/>
+          <circle cx="338" cy="294" r="234" fill="none" stroke="#ff4357" stroke-opacity="0.04" stroke-width="40"/>
+          <circle cx="333" cy="319" r="165" fill="none" stroke="#990015" stroke-opacity="0.035" stroke-width="50"/>
+          <ellipse cx="182.1" cy="152.1" rx="124" ry="62" transform="rotate(-45.0 182.1 152.1)" fill="#ff7885" opacity=".055"/>
+        </g>
+        <use href="#arc0" fill="none" stroke="#ff8b97" stroke-width="1.2" stroke-opacity=".82"/><use href="#arc0" fill="none" stroke="#ffe0e6" stroke-opacity=".35" stroke-width=".9"/><use href="#arc1" fill="#ac001b" opacity=".6" transform="translate(0 1)"/><use href="#arc1" fill="url(#paint1)" stroke="#ff8b97" stroke-width="1.2"/><g clip-path="url(#clip1)">
+          <use href="#arc1" fill="url(#spot1)"/>
+          <circle cx="330" cy="308" r="246" fill="none" stroke="#ff4357" stroke-opacity="0.04" stroke-width="40"/>
+          <circle cx="333" cy="319" r="165" fill="none" stroke="#990015" stroke-opacity="0.035" stroke-width="50"/>
+          <ellipse cx="457.9" cy="152.1" rx="124" ry="62" transform="rotate(45.0 457.9 152.1)" fill="#ff7885" opacity=".055"/>
+        </g>
+        <use href="#arc1" fill="none" stroke="#ff8b97" stroke-width="1.2" stroke-opacity=".82"/><use href="#arc1" fill="none" stroke="#ffe0e6" stroke-opacity=".35" stroke-width=".9"/><use href="#arc2" fill="#ac001b" opacity=".6" transform="translate(0 1)"/><use href="#arc2" fill="url(#paint2)" stroke="#ff8b97" stroke-width="1.2"/><g clip-path="url(#clip2)">
+          <use href="#arc2" fill="url(#spot2)"/>
+          <circle cx="322" cy="322" r="234" fill="none" stroke="#ff4357" stroke-opacity="0.04" stroke-width="40"/>
+          <circle cx="333" cy="319" r="165" fill="none" stroke="#990015" stroke-opacity="0.035" stroke-width="50"/>
+          <ellipse cx="457.9" cy="427.9" rx="124" ry="62" transform="rotate(135.0 457.9 427.9)" fill="#ff7885" opacity=".055"/>
+        </g>
+        <use href="#arc2" fill="none" stroke="#ff8b97" stroke-width="1.2" stroke-opacity=".82"/><use href="#arc2" fill="none" stroke="#ffe0e6" stroke-opacity=".35" stroke-width=".9"/><use href="#arc3" fill="#ac001b" opacity=".6" transform="translate(0 1)"/><use href="#arc3" fill="url(#paint3)" stroke="#ff8b97" stroke-width="1.2"/><g clip-path="url(#clip3)">
+          <use href="#arc3" fill="url(#spot3)"/>
+          <circle cx="314" cy="336" r="246" fill="none" stroke="#ff4357" stroke-opacity="0.04" stroke-width="40"/>
+          <circle cx="333" cy="319" r="165" fill="none" stroke="#990015" stroke-opacity="0.035" stroke-width="50"/>
+          <ellipse cx="182.1" cy="427.9" rx="124" ry="62" transform="rotate(225.0 182.1 427.9)" fill="#ff7885" opacity=".055"/>
+        </g>
+        <use href="#arc3" fill="none" stroke="#ff8b97" stroke-width="1.2" stroke-opacity=".82"/><use href="#arc3" fill="none" stroke="#ffe0e6" stroke-opacity=".35" stroke-width=".9"/>
+      <circle cx="320" cy="321" r="139" fill="#ff8b97"/>
+      <circle cx="320" cy="320" r="138" fill="url(#hub)" stroke="url(#edge)" stroke-width="3"/>
+      <g clip-path="url(#hubClip)">
+        <ellipse cx="310" cy="257" rx="148" ry="69" transform="rotate(-20 310 257)" fill="#ff4b5f" opacity=".045"/>
+      </g>
+      <circle cx="320" cy="320" r="132" fill="none" stroke="#ff929e" stroke-width="1" opacity=".52"/>
+    </g>
+
+    <g font-family="Arial,sans-serif">
+      <g transform="translate(164.8 142.8)" text-anchor="middle" fill="#fff">
+          <text font-size="21" font-weight="700"><tspan x="0" y="0">Cultivate</tspan><tspan x="0" dy="23">Connection</tspan></text>
+          <path d="M-17 33h34" stroke="#fff" stroke-width="1.5" opacity=".55"/>
+          <text y="61" font-size="30" font-weight="800" fill="#fff">C</text>
+        </g><g transform="translate(475.2 142.8)" text-anchor="middle" fill="#fff">
+          <text font-size="21" font-weight="700"><tspan x="0" y="0">Actively</tspan><tspan x="0" dy="23">Assist</tspan></text>
+          <path d="M-17 33h34" stroke="#fff" stroke-width="1.5" opacity=".55"/>
+          <text y="61" font-size="30" font-weight="800" fill="#fff">A</text>
+        </g><g transform="translate(475.2 453.2)" text-anchor="middle" fill="#fff">
+          <text font-size="21" font-weight="700"><tspan x="0" y="0">Respect</tspan><tspan x="0" dy="23">Individuality</tspan></text>
+          <path d="M-17 33h34" stroke="#fff" stroke-width="1.5" opacity=".55"/>
+          <text y="61" font-size="30" font-weight="800" fill="#fff">R</text>
+        </g><g transform="translate(164.8 453.2)" text-anchor="middle" fill="#fff">
+          <text font-size="21" font-weight="700"><tspan x="0" y="0">Engage &amp;</tspan><tspan x="0" dy="23">Empower</tspan></text>
+          <path d="M-17 33h34" stroke="#fff" stroke-width="1.5" opacity=".55"/>
+          <text y="61" font-size="30" font-weight="800" fill="#fff">E</text>
+        </g>
+      <g text-anchor="middle" fill="#fff">
+        <text x="320" y="319" font-size="47" font-weight="800" letter-spacing="1">C.A.R.E</text>
+        <path d="M296 333h48" stroke="#fff" stroke-width="1.6" opacity=".45"/>
+        <text x="320" y="355" font-size="17" font-weight="700"><tspan x="320">4 trụ cột</tspan><tspan x="320" dy="20">chăm sóc học viên</tspan></text>
+      </g>
+    </g>
+    </svg>

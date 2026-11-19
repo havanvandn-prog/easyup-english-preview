@@ -194,10 +194,10 @@
     <p class="experience-intro">Tại EasyUp English, các con luyện tiếng Anh qua trò chơi, hoạt động cùng bạn bè và thực hành nói với giáo viên. Mời ba mẹ xem những khoảnh khắc thực tế trong lớp.</p>
     <div class="experience-media" data-section-tabs>
       <div class="experience-tabs" role="tablist" aria-label="Tư liệu lớp học">
-        <button type="button" role="tab" id="experience-tab-videos" aria-selected="true" aria-controls="experience-videos"><svg class="icon" aria-hidden="true"><use href="#i-experience-play"></use></svg> Video Thực Tế</button>
-        <button type="button" role="tab" id="experience-tab-photos" aria-selected="false" aria-controls="experience-photos" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="#i-experience-photo"></use></svg> Hình Ảnh Trải Nghiệm</button>
+        <button type="button" role="tab" id="experience-tab-photos" aria-selected="true" aria-controls="experience-photos"><svg class="icon" aria-hidden="true"><use href="#i-experience-photo"></use></svg> Hình Ảnh Trải Nghiệm</button>
+        <button type="button" role="tab" id="experience-tab-videos" aria-selected="false" tabindex="-1" aria-controls="experience-videos"><svg class="icon" aria-hidden="true"><use href="#i-experience-play"></use></svg> Video Thực Tế</button>
       </div>
-      <div class="experience-panel experience-videos" id="experience-videos" role="tabpanel" aria-labelledby="experience-tab-videos" tabindex="0">
+      <div class="experience-panel experience-videos" id="experience-videos" role="tabpanel" aria-labelledby="experience-tab-videos" tabindex="0" hidden>
         <video id="experience-player" controls playsinline preload="none" src="assets/experience/thuc-hanh-noi.mp4" poster="assets/experience/video-noi.webp" aria-label="Thực hành nói với giáo viên trước màn hình"></video>
         <div class="experience-playlist" aria-label="Danh sách video">
             <button type="button" class="experience-video" data-video="assets/experience/thuc-hanh-noi.mp4" data-poster="assets/experience/video-noi.webp" data-title="Thực hành nói với giáo viên trước màn hình" aria-pressed="true" aria-controls="experience-player">
@@ -210,7 +210,7 @@
             </button>
         </div>
       </div>
-      <div class="experience-panel experience-photos" id="experience-photos" role="tabpanel" aria-labelledby="experience-tab-photos" tabindex="0" hidden>
+      <div class="experience-panel experience-photos" id="experience-photos" role="tabpanel" aria-labelledby="experience-tab-photos" tabindex="0">
         <a href="assets/experience/man-hinh-tuong-tac.webp"><img src="assets/experience/man-hinh-tuong-tac.webp" alt="Giáo viên và học viên trước màn hình tương tác" width="1400" height="787" loading="lazy" decoding="async"></a>
         <a href="assets/experience/lam-bai-tap.webp"><img src="assets/experience/lam-bai-tap.webp" alt="Hai học viên làm bài tập tại bàn" width="1400" height="787" loading="lazy" decoding="async"></a>
         <a href="assets/experience/huong-dan-bai-tap.webp"><img src="assets/experience/huong-dan-bai-tap.webp" alt="Giáo viên cúi xuống hướng dẫn học viên làm bài" width="1400" height="787" loading="lazy" decoding="async"></a>
@@ -246,91 +246,7 @@
   <div class="frame">
     <h2 id="care-heading"><span>Quy Trình Chăm Sóc Chuẩn C.A.R.E<br> Giúp Ba Mẹ “Đồng Hành Thật Nhẹ”</span></h2>
     <div class="care-layout">
-      <svg class="care-wheel" viewBox="0 0 420 420" role="img" aria-labelledby="care-wheel-title care-wheel-description">
-        <title id="care-wheel-title">Bốn trụ cột chăm sóc học viên C.A.R.E</title>
-        <desc id="care-wheel-description">Cultivate Connection, Actively Assist, Respect Individuality, Engage and Empower.</desc>
-        <defs>
-          <path id="care-wheel-segment" d="M13.27 199.69 A197 197 0 0 1 189.41 14.08 L220.53 59.37 199.02 105.58 A105 105 0 0 0 105.14 204.50 L62.87 176.03 Z"/>
-          <path id="care-wheel-sheen" d="M18.06 189.83 A193 193 0 0 1 179.81 19.38 L204.56 54.10 A163 163 0 0 0 49.01 184.50 Z"/>
-          <radialGradient id="care-hub-fill" cx="72%" cy="18%" r="88%">
-            <stop stop-color="#1b6fb4"/>
-            <stop offset=".5" stop-color="#123f77"/>
-            <stop offset="1" stop-color="#101f48"/>
-          </radialGradient>
-          <linearGradient id="care-hub-edge" x1="78%" y1="2%" x2="25%" y2="100%">
-            <stop stop-color="#a5dfff"/>
-            <stop offset=".52" stop-color="#3b89ce"/>
-            <stop offset="1" stop-color="#a3d8f7"/>
-          </linearGradient>
-          <linearGradient id="care-segment-sheen" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop stop-color="#fff" stop-opacity=".25"/>
-            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-          </linearGradient>
-          <linearGradient id="care-fill-c" x1="10%" y1="2%" x2="93%" y2="93%">
-            <stop stop-color="#ff505e"/>
-            <stop offset=".46" stop-color="#d21133"/>
-            <stop offset="1" stop-color="#810b2a"/>
-          </linearGradient>
-          <linearGradient id="care-fill-a" x1="10%" y1="2%" x2="93%" y2="93%">
-            <stop stop-color="#ffb046"/>
-            <stop offset=".46" stop-color="#c66006"/>
-            <stop offset="1" stop-color="#873307"/>
-          </linearGradient>
-          <linearGradient id="care-fill-r" x1="10%" y1="2%" x2="93%" y2="93%">
-            <stop stop-color="#92cb45"/>
-            <stop offset=".46" stop-color="#43851e"/>
-            <stop offset="1" stop-color="#174522"/>
-          </linearGradient>
-          <linearGradient id="care-fill-e" x1="10%" y1="2%" x2="93%" y2="93%">
-            <stop stop-color="#3abff5"/>
-            <stop offset=".46" stop-color="#087ac7"/>
-            <stop offset="1" stop-color="#08366c"/>
-          </linearGradient>
-        </defs>
-        <g class="care-wheel-segments">
-          <g transform="rotate(0 210 210)">
-            <use href="#care-wheel-segment" fill="url(#care-fill-c)" stroke="#ff7f93"/>
-            <use href="#care-wheel-sheen" fill="url(#care-segment-sheen)" stroke="none"/>
-          </g>
-          <g transform="rotate(90 210 210)">
-            <use href="#care-wheel-segment" fill="url(#care-fill-a)" stroke="#ffd080"/>
-            <use href="#care-wheel-sheen" fill="url(#care-segment-sheen)" stroke="none"/>
-          </g>
-          <g transform="rotate(180 210 210)">
-            <use href="#care-wheel-segment" fill="url(#care-fill-r)" stroke="#bce477"/>
-            <use href="#care-wheel-sheen" fill="url(#care-segment-sheen)" stroke="none"/>
-          </g>
-          <g transform="rotate(270 210 210)">
-            <use href="#care-wheel-segment" fill="url(#care-fill-e)" stroke="#7cd8ff"/>
-            <use href="#care-wheel-sheen" fill="url(#care-segment-sheen)" stroke="none"/>
-          </g>
-        </g>
-        <g class="care-wheel-hub">
-          <circle cx="210" cy="210" r="94.5" fill="url(#care-hub-fill)" stroke="url(#care-hub-edge)" stroke-width="2.5"/>
-          <circle cx="210" cy="210" r="89" fill="none" stroke="#a5dfff" stroke-opacity=".25"/>
-        </g>
-        <g transform="translate(103 80)">
-          <text class="care-wheel-letter">C</text>
-          <text class="care-wheel-label" y="22">Cultivate<tspan x="0" dy="18">Connection</tspan></text>
-          <use href="#i-care-handshake" x="-16" y="50" width="32" height="32" class="care-wheel-icon"/>
-        </g>
-        <g transform="translate(317 80)">
-          <text class="care-wheel-letter">A</text>
-          <text class="care-wheel-label" y="22">Actively<tspan x="0" dy="18">Assist</tspan></text>
-          <use href="#i-people" x="-16" y="50" width="32" height="32" class="care-wheel-icon"/>
-        </g>
-        <g transform="translate(317 277)">
-          <text class="care-wheel-letter">R</text>
-          <text class="care-wheel-label" y="22">Respect<tspan x="0" dy="18">Individuality</tspan></text>
-          <use href="#i-care-sprout" x="-16" y="50" width="32" height="32" class="care-wheel-icon"/>
-        </g>
-        <g transform="translate(103 277)">
-          <text class="care-wheel-letter">E</text>
-          <text class="care-wheel-label" y="22">Engage &amp;<tspan x="0" dy="18">Empower</tspan></text>
-          <use href="#i-chat" x="-16" y="50" width="32" height="32" class="care-wheel-icon"/>
-        </g>
-        <text class="care-wheel-center" x="210" y="198"><tspan class="care-wheel-brand">C.A.R.E</tspan><tspan x="210" dy="26">4 trụ cột</tspan><tspan x="210" dy="20">chăm sóc học viên</tspan></text>
-      </svg>
+      <img class="care-wheel" src="assets/care-wheel-do-mo.svg" width="580" height="580" loading="lazy" decoding="async" alt="C.A.R.E — Cultivate Connection, Actively Assist, Respect Individuality và Engage &amp; Empower">
       <ol class="care-principles">
         <li class="care-c">
           <span class="care-letter" aria-hidden="true">C</span>

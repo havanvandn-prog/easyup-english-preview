@@ -389,15 +389,7 @@ main > section.benefits-pa4 { padding-bottom: 0; }
   align-items: end;
 }
 .course-portrait { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
-.course-copy { position: relative; min-width: 0; }
-.course-copy::before {
-  content: '';
-  position: absolute;
-  left: calc(-1 * var(--column-space) / 2);
-  top: 8px;
-  bottom: 8px;
-  border-left: 1px solid #efbdc3;
-}
+.course-copy { min-width: 0; }
 .course-panel h3 { color: var(--red); }
 .course-tag {
   display: inline-block;
@@ -417,7 +409,8 @@ main > section.benefits-pa4 { padding-bottom: 0; }
 .course-side { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; width: fit-content; max-width: 100%; margin-top: 22px; text-align: left; }
 @media (min-width: 1024px) {
   .course-panel { grid-template-columns: minmax(0,2fr) minmax(0,3fr); }
-  .course-art { max-width: 26rem; }
+  .course-art { position: relative; max-width: 26rem; aspect-ratio: 736 / 636; overflow: clip; }
+  .course-portrait { position: absolute; inset: auto 0 0; height: auto; }
   main > .courses .course-panel h3 { font-size: 28px; }
   .course-side { flex-flow: row wrap; align-items: center; gap: 8px 16px; }
 }
@@ -455,6 +448,9 @@ main > section.teachers { padding-bottom: 0; }
   .teacher-card:first-child { margin-inline-end: -8px; }
   .teacher-card:last-child { margin-inline-start: -8px; }
 }
+@media (min-width: 1024px) {
+  .teacher-art { width: 138%; }
+}
 @media (max-width: 767px) {
   .tabs { gap: 6px; }
   .course-dots { display: none; }
@@ -463,7 +459,6 @@ main > section.teachers { padding-bottom: 0; }
   .tabs small { font-size: 12px; }
   .course-panel { grid-template-columns: minmax(0,1fr); gap: 16px; padding: 16px 14px 8px; }
   .course-art { grid-column: 1; grid-row: 1; width: min(75%, 15rem); }
-  .course-copy::before { display: none; }
   .course-copy li { grid-template-columns: 32px minmax(0,1fr); gap: 8px; }
   .course-copy li .icon { width: 32px; height: 30px; padding: 5px; }
   .course-arrow { width: 36px; top: 105px; }
@@ -814,16 +809,8 @@ dialog::backdrop { background: #1c0c12bb; }
   align-items: center;
 }
 .care-wheel { display: block; width: min(100%, 420px); height: auto; justify-self: center; }
-.care-wheel-segments { stroke-width: 1.6px; stroke-linejoin: round; filter: drop-shadow(0 3px 3px #22142f30); }
-.care-wheel-hub { filter: drop-shadow(0 4px 4px #11193842); }
-.care-wheel text { text-anchor: middle; fill: #fff; font-family: var(--body-font); font-weight: 750; }
-.care-wheel-letter { font-size: 35px; font-weight: 850; }
-.care-wheel-label { font-size: 15px; }
-.care-wheel .care-wheel-center { font-size: 16px; }
-.care-wheel-brand { font-size: 30px; font-weight: 850; }
-.care-wheel-icon { fill: none; stroke: #fff; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; color: white; }
 .care-principles, .care-checkpoints ol { padding: 0; margin: 0; list-style: none; }
-.care-principles { display: grid; gap: 20px; }
+.care-principles { display: grid; gap: 26px; }
 .care-principles li { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 12px; align-items: start; }
 .care-principles p, .care-checkpoints li { font-size: var(--body-size); line-height: var(--body-leading); }
 .care-letter {
@@ -836,10 +823,10 @@ dialog::backdrop { background: #1c0c12bb; }
   font-size: 22px;
   font-weight: 850;
 }
-.care-c { --care-letter-fill: linear-gradient(#f44c59,#c90324); }
-.care-a { --care-letter-fill: linear-gradient(#e88514,#a84b00); }
-.care-r { --care-letter-fill: linear-gradient(#649d2e,#31711e); }
-.care-e { --care-letter-fill: linear-gradient(#2999d5,#00669e); }
+.care-c { --care-letter-fill: linear-gradient(#ed0028,#b9001c); }
+.care-a { --care-letter-fill: linear-gradient(#f91233,#c5001f); }
+.care-r { --care-letter-fill: linear-gradient(#e70025,#ae0018); }
+.care-e { --care-letter-fill: linear-gradient(#d70024,#990016); }
 .care-checkpoints {
   display: grid;
   grid-template-columns: minmax(0, .8fr) minmax(0, 2.8fr);
@@ -868,7 +855,7 @@ main > .care .care-checkpoints h3 {
 @media (max-width: 767px) {
   .care-layout, .care-checkpoints { grid-template-columns: minmax(0,1fr); }
   .care-wheel { width: min(100%, 340px); }
-  .care-principles { gap: 16px; }
+  .care-principles { gap: 22px; }
   .care-checkpoints ol { grid-template-columns: minmax(0,1fr); padding: 6px 10px 2px; }
   .care-checkpoints li { padding: 10px 4px; }
   .care-checkpoints li + li { border-inline-start: 0; border-top: 1px solid #efbbc4; }
@@ -961,6 +948,14 @@ main > .care .care-checkpoints h3 {
 .tuition-outline { border: 1px solid var(--section-title-color); background: transparent; color: #be0822; }
 .tuition-outline:hover { background: #ffe6ea; }
 .form-selected-plan { grid-column: 1 / -1; font-size: 14px; font-weight: 650; line-height: 1.45; }
+@media (min-width: 940px) {
+  .tuition-grid {
+    --tuition-track: calc((100% - 2 * var(--card-space)) * 0.92 / 3.08);
+    grid-template-columns: var(--tuition-track) calc(var(--tuition-track) * 1.08) var(--tuition-track);
+    column-gap: 0;
+    justify-content: space-between;
+  }
+}
 @media (max-width: 939px) {
   .tuition-grid { width: min(100%, 580px); margin-inline: auto; padding-top: 0; grid-template-columns: minmax(0, 1fr); row-gap: 22px; }
   .tuition-featured { margin-top: 8px; }
