@@ -469,6 +469,7 @@ main > section.teachers { padding-bottom: 0; }
   .course-arrow { width: 36px; top: 105px; }
   .course-arrow.prev { left: -10px; }
   .course-arrow.next { right: -10px; }
+  main > section.teachers { padding-top: calc(var(--section-space) - 16px); }
   .teacher-grid { grid-template-columns: minmax(0,1fr); }
   .teacher-art { width: min(92%, 27.6rem); grid-row: 3; }
 }
@@ -552,11 +553,16 @@ main > section.teachers { padding-bottom: 0; }
   .signup-copy p { max-width: 40ch; margin-inline: auto; }
   .signup-mascot { max-width: 190px; }
 }
+@media (max-width: 767px) {
+  .signup-inner { grid-template-areas: "intro" "perks" "form" "mascot"; }
+  .signup-perks { display: contents; }
+  .signup-perks ul { grid-area: perks; width: min(100%, 600px); }
+  .signup-mascot { grid-area: mascot; width: min(100%, 380px); max-width: none; }
+}
 @media (max-width: 520px) {
   .signup-inner { row-gap: 18px; }
   .signup-copy h2 { font-size: clamp(23px,7vw,32px); }
-  .signup-perks { grid-template-columns: minmax(0,1fr); gap: 4px; }
-  .signup-mascot { width: 112px; }
+  .signup-mascot { width: min(100%, 224px); }
   .signup-perks ul { padding: 0; }
   .signup-perks li { grid-template-columns: 40px minmax(0,1fr); }
   .signup-perk-icon .icon { width: 25px; height: 25px; }
@@ -665,7 +671,7 @@ dialog::backdrop { background: #1c0c12bb; }
   box-shadow: var(--shadow-1);
 }
 .faculty-profiles > [hidden] { display: grid !important; visibility: hidden; pointer-events: none; }
-.faculty-portrait { position: relative; aspect-ratio: 4 / 5; align-self: center; overflow: clip; border-radius: 16px; background: #f3edf0; }
+.faculty-portrait { position: relative; aspect-ratio: 1; align-self: center; overflow: clip; border-radius: 16px; background: #f3edf0; }
 .faculty-portrait img { width: 100%; height: 100%; object-fit: cover; }
 .faculty-portrait::after {
   content: '';
@@ -990,7 +996,7 @@ main > .care .care-checkpoints h3 {
 main > :is(.hero, .benefits, .teachers, .faculty, .care) {
   background: var(--section-bg-white);
 }
-main > :is(.concerns, .experience, .tuition) {
+main > :is(.experience, .tuition) {
   background: var(--section-bg-blush);
 }
 .site-footer { background: var(--section-bg-brand); }
