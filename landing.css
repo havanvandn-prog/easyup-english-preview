@@ -442,7 +442,6 @@ main > section.teachers { padding-bottom: 0; }
   align-self: end;
   justify-self: center;
   width: 115%;
-  background: radial-gradient(ellipse at 50% 67%, #fbd7dc 0 54%, transparent 71%);
 }
 .teacher-group { width: 100%; height: auto; filter: drop-shadow(0 1px 1px white); }
 .teacher-card { align-self: stretch; display: flex; flex-direction: column; gap: 16px; padding: 17px 20px; border: 1px solid #f4c9cf; border-radius: 24px; background: #fffbfbdb; box-shadow: 0 4px 9px #a0192512; }
