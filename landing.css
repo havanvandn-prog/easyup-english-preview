@@ -450,6 +450,10 @@ main > section.teachers { padding-bottom: 0; }
 }
 @media (min-width: 1024px) {
   .teacher-art { width: 138%; }
+  .teacher-card { width: calc((100% + 8px) * 0.9); }
+  .teacher-card:first-child { justify-self: start; margin-inline-end: 0; }
+  .teacher-card:last-child { justify-self: end; margin-inline-start: 0; }
+  main > .teachers .teacher-card h3 { font-size: 22px; }
 }
 @media (max-width: 767px) {
   .tabs { gap: 6px; }
