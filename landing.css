@@ -321,7 +321,7 @@ main > section.benefits-pa4 { padding-bottom: 0; }
   }
 }
 /* Lộ trình và đội ngũ theo mẫu đã duyệt. */
-.courses { background: radial-gradient(ellipse at 50% 32%, #fff 48%, #fff5f6 100%); }
+.courses { --course-blush: #fff2f4; background: #fff; }
 .tabs {
   width: min(100%, 57rem);
   display: grid;
@@ -340,7 +340,7 @@ main > section.benefits-pa4 { padding-bottom: 0; }
   border: 1px solid #f3c8cc;
   border-radius: 20px;
   color: #a70216;
-  background: linear-gradient(#fff1f2, #f9e4e5);
+  background: var(--course-blush);
   line-height: 1.18;
   text-align: center;
 }
@@ -364,8 +364,7 @@ main > section.benefits-pa4 { padding-bottom: 0; }
   isolation: isolate;
   border: 1px solid #f4c7ce;
   border-radius: 28px;
-  background: radial-gradient(ellipse at 90% 123%, #fde7ea 4%, transparent 55%),
-              radial-gradient(ellipse at -15% 117%, #fbe5e8 8%, transparent 41%), #fffdfd;
+  background: var(--course-blush);
   box-shadow: 0 7px 18px #9c19211b;
 }
 .course-panels { display: grid; }
@@ -404,7 +403,7 @@ main > section.benefits-pa4 { padding-bottom: 0; }
 }
 .course-copy ul { display: grid; gap: 14px; }
 .course-copy li { display: grid; grid-template-columns: 40px minmax(0,1fr); gap: 11px; align-items: start; font-size: var(--body-size); line-height: var(--body-leading); }
-.course-copy li .icon { width: 40px; height: 36px; padding: 7px; color: #e80023; background: #fce5e8; border-radius: 9px; }
+.course-copy li .icon { width: 40px; height: 36px; padding: 7px; color: #e80023; background: var(--course-blush); border-radius: 9px; }
 .course-copy li strong { color: var(--deep); }
 .course-side { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; width: fit-content; max-width: 100%; margin-top: 22px; text-align: left; }
 @media (min-width: 1024px) {
@@ -833,7 +832,7 @@ dialog::backdrop { background: #1c0c12bb; }
 .care-e { --care-letter-fill: linear-gradient(#d70024,#990016); }
 .care-checkpoints {
   display: grid;
-  grid-template-columns: minmax(0, .8fr) minmax(0, 2.8fr);
+  grid-template-columns: max(15.5rem, 25%) minmax(0, 1fr);
   align-items: stretch;
   margin-top: var(--heading-space);
   padding: 6px;
@@ -848,7 +847,9 @@ main > .care .care-checkpoints h3 {
   border-radius: 18px;
   background: var(--cta-fill);
   color: #fff;
-  font-size: 19px;
+  font-size: clamp(14px, 5vw, 18px);
+  line-height: 1.3;
+  white-space: nowrap;
   text-align: center;
 }
 .care-checkpoints ol { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); align-items: center; padding: 8px 0; }
@@ -856,6 +857,21 @@ main > .care .care-checkpoints h3 {
 .care-checkpoints li + li { border-inline-start: 1px solid #efbbc4; }
 .care-checkpoints strong { display: block; color: var(--section-title-color); font-size: 16px; }
 .care-checkpoints .icon { width: 32px; height: 32px; color: var(--section-title-color); }
+@media (min-width: 1024px) {
+  .care > .frame {
+    --care-wheel-width: min(420px, calc((100% - var(--column-space)) * 0.78 / 1.78));
+    --care-principles-width: calc((100% - var(--column-space)) * 0.825 / 1.78);
+    --care-layout-gap: 32px;
+    --care-content-width: calc(var(--care-wheel-width) + var(--care-layout-gap) + var(--care-principles-width));
+  }
+  .care-layout, .care-checkpoints { width: var(--care-content-width); margin-inline: auto; }
+  .care-layout {
+    grid-template-columns: minmax(0, min(420px, calc((100% - var(--care-layout-gap)) * 0.78 / 1.605))) minmax(0, 1fr);
+    gap: var(--care-layout-gap);
+  }
+  .care-checkpoints ol { align-items: stretch; padding: 0; }
+  .care-checkpoints li { padding: 8px 12px; font-size: 13px; }
+}
 @media (max-width: 767px) {
   .care-layout, .care-checkpoints { grid-template-columns: minmax(0,1fr); }
   .care-wheel { width: min(100%, 340px); }
@@ -969,9 +985,7 @@ main > .care .care-checkpoints h3 {
 :root {
   --section-bg-white: #fff;
   --section-bg-blush: #fff2f4;
-  --section-bg-neutral: #f7f8fa;
   --section-bg-brand: #c90020;
-  --section-bg-signup: #ffe5e9;
 }
 
 main > :is(.hero, .benefits, .teachers, .faculty, .care) {
@@ -980,7 +994,5 @@ main > :is(.hero, .benefits, .teachers, .faculty, .care) {
 main > :is(.concerns, .experience, .tuition) {
   background: var(--section-bg-blush);
 }
-main > .courses { background: var(--section-bg-neutral); }
-main > .signup { background: var(--section-bg-signup); }
 .site-footer { background: var(--section-bg-brand); }
 .signup-wave stop:last-child { stop-color: var(--section-bg-brand); }
